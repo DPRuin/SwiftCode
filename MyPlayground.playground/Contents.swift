@@ -106,9 +106,19 @@ myArray.remove(at: 4)
 myArray.reverse()
 
 // 字典
-var crew
+var crew = [
+    "Captain" : "Benjamin Sisko",
+    "First Officer" : "Kira Nerys",
+    "Constable" : "Odo"
+]
 
+crew["Captain"]
+crew["Doctor"] = "Julian Bashir"
 
+var aNumberDictionary = [1 : 2]
+aNumberDictionary[21] = 23
+
+var aMixedDictionary = ["one" : 1, "two" : "twoooo"] as [String : Any]
 
 
 
