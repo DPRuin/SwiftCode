@@ -82,8 +82,31 @@ let aString = anIntegaer
     
 #endif
 
+// 元组
+let aTuple = (1, "yes")
+let theNumber = aTuple.0
+
+let anotherTuple = (aNumber: 1, aString: "yes")
+let theOtherNumber = anotherTuple.aNumber
 
 
+// 数组
+
+let arrayOfInteger: [Int] = [1,2,3]
+let implicitArrayOfInteger = [1,2,3,4]
+let anotherArray = [Int]()
+
+let immutableArray = [42, 21]
+
+var myArray = [1, 2, 3]
+myArray.append(4)
+myArray.count
+myArray.insert(5, at: 0)
+myArray.remove(at: 4)
+myArray.reverse()
+
+// 字典
+var crew
 
 
 
