@@ -1,2 +1,2 @@
-# SwityCode
-SwityCode
+# SwiftCode
+SwiftCode
