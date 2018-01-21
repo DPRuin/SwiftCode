@@ -120,6 +120,118 @@ aNumberDictionary[21] = 23
 
 var aMixedDictionary = ["one" : 1, "two" : "twoooo"] as [String : Any]
 
+// 循环
+let loopingArray = [1, 2, 3, 4, 5]
+var loopSum = 0
+for number in loopingArray {
+    loopSum += number
+}
+loopSum
+
+var firstCounter = 0
+for index in 1 ..< 10 {
+    firstCounter += 1
+}
+
+
+var secondCounter = 0
+for _ in 1 ... 10 {
+    secondCounter += 1
+}
+
+var countDown = 5
+while countDown > 0 {
+    countDown -= 1
+}
+
+var countUp = 0
+repeat {
+    countUp += 1
+} while countUp < 5
+
+// 选择
+var conditionalString: String? = "a string"
+if let theString = conditionalString {
+    print("the string is '\(theString)'")
+} else {
+    print("the string is nil")
+}
+
+let integerSwitch = 3
+switch integerSwitch {
+case 0:
+    print("it is 0")
+case 1:
+    print("it is 1")
+case 2:
+    print("it is 2")
+default:
+    print("it is something else")
+}
+
+let stringSwitch = "Hello"
+
+switch stringSwitch {
+case "Hello":
+    print("a greeting")
+case "Goodbye":
+    print("a farewell")
+default:
+    print("something else")
+}
+
+
+let tupleSwitch = ("3", 344)
+switch tupleSwitch {
+case ("Yes", 123):
+    print("Tuple contains 'Yes' and '123'")
+case ("Yes", _):
+    print("Tuple contains 'Yes' and something else")
+case (let string, _):
+    print("Tuple contain the string '\(string)' and something else")
+default:
+    break
+}
+
+
+var someNumber = 15
+switch someNumber {
+case 0...10:
+    print("number is between 0 and 10")
+case 11...20:
+    print("number is between 11 and 20")
+case 21:
+    print("number is 21")
+default:
+    print("number is something else")
+}
+
+let fallthrouthSwitch = 10
+switch fallthrouthSwitch {
+case 0..<20:
+    print("Number is between 0 and 20")
+    fallthrough
+case 0..<30:
+    print("number is between 0 and 30")
+default:
+    print("number is something and else")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
