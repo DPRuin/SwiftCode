@@ -215,14 +215,19 @@ case 0..<30:
     print("number is between 0 and 30")
 default:
     print("number is something and else")
+
 }
 
+func doSomeWork {
+    print("getting started")
+    defer {
+        print("all done")
+        
+    }
+    print("getting to work")
+}
 
-
-
-
-
-
+doSomeWork()
 
 
 
