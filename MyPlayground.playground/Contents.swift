@@ -34,8 +34,15 @@ func sumNumbers(numbers: Int...) -> Int {
 sumNumbers(numbers: 1,2,3,4)
 
 
+var swap1 = 2
+var swap2 = 3
+func swapValues(firstValue: inout Int, secondValue: inout Int) {
+    (firstValue, secondValue) = (secondValue, firstValue)
+}
 
-
+swapValues(firstValue: &swap1, secondValue: &swap2)
+swap1
+swap2
 
 
 
