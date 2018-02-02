@@ -7,9 +7,11 @@ var numbersSorted = numbers.sorted { (n1, n2) -> Bool in
     return n2 > n1
 }
 
+numbers.sort()
+numbers
 
-
-
+var comparator = { (a:Int ,b:Int) in a < b}
+comparator(1, 2)
 
 
 
