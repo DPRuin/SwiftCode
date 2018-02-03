@@ -2,14 +2,6 @@
 
 import UIKit
 
-class Vehicle {
-    var color: String?
-    
-    var maxSpeed = 80
-    
-
-    
-}
 
 
 
